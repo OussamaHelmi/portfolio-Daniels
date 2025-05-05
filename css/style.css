@@ -1,0 +1,675 @@
+/* global classes  */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+section{
+    padding-block: 50px;
+}
+.bg-gray{
+    background-color: #f7f7f7;
+}
+li{
+    list-style-type: none;
+}
+h1, h2, h3, h4, h5, h6, .logo {
+    font-family: "Montserrat", sans-serif;
+
+}
+p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+/* navbar  */
+.main-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../imgs/bg.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.social-icon span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 16px;
+    line-height: 35px;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.3);
+}
+header h5::after {
+    content: "|";
+    animation: anim 15s ease-out infinite;
+}
+.navbar-nav .nav-link.active {
+    position: relative;
+    color: white;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link.active:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    width: 100%; /* just to be shown for the first page without js  */
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+}
+
+
+.navbar-nav .nav-link.active:hover:after {
+    width: 100%;
+}
+
+/* key animation */
+@keyframes anim {
+    0% {
+        content: "|";
+    }
+
+    1% {
+        content: "|";
+    }
+
+    2% {
+        content: "L|";
+    }
+
+    3% {
+        content: "La|";
+    }
+
+    4% {
+        content: "Lar|";
+    }
+
+    5% {
+        content: "Larr|";
+    }
+
+    6% {
+        content: "Larry|";
+    }
+
+    7% {
+        content: "Larry |";
+    }
+
+    8% {
+        content: "Larry D|";
+    }
+
+    9% {
+        content: "Larry Da|";
+    }
+
+    10% {
+        content: "Larry Dan|";
+    }
+
+    11% {
+        content: "Larry Dani|";
+    }
+
+    12% {
+        content: "Larry Danie|";
+    }
+
+    13% {
+        content: "Larry Daniel|";
+    }
+
+    14% {
+        content: "Larry Daniels|";
+    }
+
+    15% {
+        content: "Developer|";
+    }
+
+    16% {
+        content: "D|";
+    }
+
+    17% {
+        content: "De|";
+    }
+
+    18% {
+        content: "Dev|";
+    }
+
+    19% {
+        content: "Deve|";
+    }
+
+    20% {
+        content: "Devel|";
+    }
+
+    21% {
+        content: "Develo|";
+    }
+
+    22% {
+        content: "Develop|";
+    }
+
+    23% {
+        content: "Develope|";
+    }
+
+    24% {
+        content: "Developer|";
+    }
+
+    25% {
+        content: "|";
+    }
+
+    26% {
+        content: "|";
+    }
+
+    27% {
+        content: "|";
+    }
+
+    28% {
+        content: "|";
+    }
+
+    29% {
+        content: "|";
+    }
+
+    30% {
+        content: "|";
+    }
+
+    31% {
+        content: "|";
+    }
+
+    32% {
+        content: "F|";
+    }
+
+    33% {
+        content: "|";
+    }
+
+    34% {
+        content: "|";
+    }
+
+    35% {
+        content: "|";
+    }
+
+    36% {
+        content: "|";
+    }
+
+    37% {
+        content: "|";
+    }
+
+    38% {
+        content: "|";
+    }
+
+    39% {
+        content: "|";
+    }
+
+    40% {
+        content: "P|";
+    }
+
+    41% {
+        content: "Ph|";
+    }
+
+    42% {
+        content: "Pho|";
+    }
+
+    43% {
+        content: "Phot|";
+    }
+
+    44% {
+        content: "Photo|";
+    }
+
+    45% {
+        content: "Photog|";
+    }
+
+    46% {
+        content: "Photogr|";
+    }
+
+    47% {
+        content: "Photogra|";
+    }
+
+    48% {
+        content: "Photograp|";
+    }
+
+    49% {
+        content: "Photograph|";
+    }
+
+    50% {
+        content: "Photographe|";
+    }
+
+    51% {
+        content: "Photographer|";
+    }
+
+    52% {
+        content: "Photographer.|";
+    }
+
+    53% {
+        content: "Photographer.|";
+    }
+
+    54% {
+        content: "Photographer.|";
+    }
+
+    55% {
+        content: "Photographer|";
+    }
+
+    56% {
+        content: "Photographe|";
+    }
+
+    57% {
+        content: "Photograph|";
+    }
+
+    58% {
+        content: "Photograp|";
+    }
+
+    59% {
+        content: "Photogra|";
+    }
+
+    60% {
+        content: "Photogr|";
+    }
+
+    61% {
+        content: "Photog|";
+    }
+
+    62% {
+        content: "Photo|";
+    }
+
+    63% {
+        content: "Phot|";
+    }
+
+    64% {
+        content: "Pho|";
+    }
+
+    65% {
+        content: "Ph|";
+    }
+
+    66% {
+        content: "P|";
+    }
+
+    67% {
+        content: "|";
+    }
+
+    68% {
+        content: "|";
+    }
+
+    69% {
+        content: "|";
+    }
+
+    70% {
+        content: "D|";
+    }
+
+    71% {
+        content: "De|";
+    }
+
+    72% {
+        content: "Des|";
+    }
+
+    73% {
+        content: "Desi|";
+    }
+
+    74% {
+        content: "Desig|";
+    }
+
+    75% {
+        content: "Design|";
+    }
+
+    76% {
+        content: "Designe|";
+    }
+
+    77% {
+        content: "Designer|";
+    }
+
+    /* 78% {
+        content: "|";
+    }
+
+    79% {
+        content: "|";
+    }
+
+    80% {
+        content: "|";
+    }
+
+    81% {
+        content: "|";
+    }
+
+    82% {
+        content: "|";
+    }
+
+    83% {
+        content: "|";
+    }
+
+    84% {
+        content: "|";
+    }
+
+    85% {
+        content: "|";
+    }
+
+    86% {
+        content: "|";
+    }
+
+    87% {
+        content: "|";
+    }
+
+    88% {
+        content: "|";
+    }
+
+    89% {
+        content: "|";
+    }
+
+    90% {
+        content: "|";
+    }
+
+    91% {
+        content: "|";
+    }
+
+    92% {
+        content: "|";
+    }
+
+    93% {
+        content: "|";
+    }
+
+    94% {
+        content: "|";
+    } */
+
+    95% {
+        content: "|";
+    }
+}
+/* about mw-section  */
+
+.aboutme-content .progress{
+    margin: 15px;
+    
+    }
+    .btn1{
+        transition: all 0.9s;
+    }
+    
+    .btn1:hover{
+    background-color: transparent;
+    color: black;
+    }
+    
+    /*service-section*/
+.icon-circle{
+   font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    transition: all 0.5s;
+}
+.service-box{
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+}
+.service-content p{
+color: #748182;
+}
+.service-box:hover .icon-circle{
+    background-color: black;
+    color: white;
+}
+.sub-title{
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* main-section title*/
+.section-title h3::after{
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom:-5px;
+    left: 0;
+    z-index: -1;
+
+}
+/* portfolio-section*/
+.portfolio-card img{
+    width: 100%;
+}
+
+.portfolio-card .caption{
+    position: absolute;
+  top: 1px;
+  left: 5px;
+  right: 5px;
+  bottom: 20px;
+  /* when I put all having same size didnt work  for the bottom*/
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 2;
+  transform: translateY(10px);
+}
+.caption:hover{
+    opacity: 1;
+   
+}
+.portfolio .filtering .active:before {
+    width: 95%;
+  }
+
+.ico-circle i{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background: #111;
+    color: #eee;
+    font-size: 12PX;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.9s;
+}
+.ico-circle i:hover{
+   background-color:transparent;
+   color: #000;
+}
+.nav-pills .nav-link.active {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 6px; 
+}
+
+
+.nav-pills .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; 
+    height: 2px; 
+    background-color: #000; 
+}
+
+
+/* Testimonials-section*/
+.carousel-indicators [data-bs-target] {
+    border: unset;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+  
+}
+/* our team */
+.card-img img{
+    transition: all 0.9s;
+}
+.card-img:hover img {
+    transform: scale(1.2);
+  }
+.caption-2{
+    background-color: rgba(255, 255, 255, 0.95);
+   
+    position: absolute;
+    text-align: center;
+    inset: 5px;
+    opacity: 0;
+    transition: 0.5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.caption-2:hover{
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+   
+}
+/* contact */
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box .icon-cricle{
+    background-color: #f4f4f4;
+    color: #333;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: all 0.9s;
+}
+.contact-box:hover .icon-cricle{
+    background-color: #333;
+    color: white;
+}
+
+.contact-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f4f4f4;
+  margin: 10px;
+}
+
+
+.form textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+}
+
+
+.form .buton {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px; 
+    display: block; 
+}
+
+
+
+
+   
